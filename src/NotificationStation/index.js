@@ -1,10 +1,12 @@
 import React, { Component, PropTypes } from 'react';
+import Notification from '../Notification';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
-const styles = {}
-
-const themeStyles = {}
-
-const hasNotifications = (notifications) => notifications.length > 0;
+const styles = {
+  position: 'fixed',
+  top: '60px',
+  right: '60px',
+}
 
 export default class NotificationStation extends Component {
   static propTypes = {
@@ -43,11 +45,6 @@ export default class NotificationStation extends Component {
 
   renderNotifications = () => {
     const { notifications } = this.state;
-    if (hasNotifications(notifications)) {
-      return notifications.map(notification =>
-        <div>{notification.text}</div>
-      )
-    }
   }
 
   render() {
@@ -56,12 +53,20 @@ export default class NotificationStation extends Component {
         queueNotification: this.queueNotification,
       }),
     );
+    const notifications = this.state.notifications.map(notification =>
+        <Notification text={notification.text} />
+      );
     return (
       <div>
         <div
-          style={themeStyles}
+          style={styles}
         >
-          {this.renderNotifications()}
+          <CSSTransitionGroup
+            transitionName="example"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}>
+            {notifications}
+          </CSSTransitionGroup>
         </div>
         {childrenWithProps}
       </div>

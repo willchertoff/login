@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="23px" viewBox="0 0 22 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.5">
+        <g id="1-Login" transform="translate(-559.000000, -510.000000)" stroke="#FFFFFF">
+            <g id="Username" transform="translate(536.500000, 494.000000)">
+                <g id="Group" transform="translate(21.000000, 15.000000)">
+                    <g id="Username">
+                        <g id="Group" transform="translate(1.500000, 1.500000)">
+                            <circle id="Oval" cx="11" cy="11" r="10.5"></circle>
+                            <path d="M11,12 C9.35114237,12 8,10.6488576 8,9 C8,7.35114237 9.35114237,6 11,6 C12.6488576,6 14,7.35114237 14,9 C14,10.6488576 12.6488576,12 11,12 Z" id="Shape"></path>
+                            <path d="M18.4064361,18 L3.59356386,18 C4.21730506,16.3330819 7.84482704,15 11,15 C14.155173,15 17.7826949,16.3330819 18.4064361,18 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
